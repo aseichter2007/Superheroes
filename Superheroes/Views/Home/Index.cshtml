@@ -1,9 +1,12 @@
-﻿@{
+﻿@model Superheroes.Models.SuperHero
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to my secret underground lair.</h1>
-
-
+    <a asp-controller="Superhero"
+       asp-action="Index">Let's go to the lab.</a>
+    <img src="@Model.IMGurl"/>
 </div>

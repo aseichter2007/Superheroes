@@ -23,8 +23,21 @@ namespace Superheroes.Controllers
 
         public IActionResult Index()
         {
-            SuperHero hero = _Context.heroes.Where(h => h.favorite == true).Single();
+            SuperHero hero;
+            try
+            {
+
+                 hero = _Context.heroes.Where(h => h.favorite == true).Single();
+            }
+            catch
+            {
+                 hero = new SuperHero();
+                 hero.IMGurl = "https://img.cinemablend.com/filter:scale/quill/a/a/3/4/8/1/aa3481a1a3ace387a891576da742c5524f70873e.jpg";
+
+            }
+
             return View(hero);
+
         }
 
         public IActionResult Privacy()

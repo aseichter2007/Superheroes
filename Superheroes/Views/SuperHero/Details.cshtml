@@ -4,69 +4,78 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Details of selected hero.</h1>
 
 <div>
-    <h4>SuperHero</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.alterEgo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.alterEgo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.primaryAbility)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.primaryAbility)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.secondaryAbility)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.secondaryAbility)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.catchPrase)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.catchPrase)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.weakness)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.weakness)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.favorite)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.favorite)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IMGurl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IMGurl)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
+
+    <div>
+        <div>
+            <h4>@Html.DisplayFor(model => Model.alterEgo)</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Id)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.name)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.name)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.alterEgo)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.alterEgo)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.primaryAbility)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.primaryAbility)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.secondaryAbility)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.secondaryAbility)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.catchPrase)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.catchPrase)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.weakness)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.weakness)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.favorite)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.favorite)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IMGurl)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IMGurl)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+
 </div>
