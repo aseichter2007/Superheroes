@@ -9,13 +9,14 @@ namespace Superheroes.Models
     public class SuperHero
     {
         [Key]
-        int Id { get; set; }
-        string name { get; set; }
-        string alterEgo { get; set; }
-        string primaryAbility { get; set; }
-        string secondaryAbility { get; set; }
-        string catchPrase { get; set; }
-        string weakness { get; set; }
-        bool favorite { get; set; }
+        public int Id { get; set; }
+        public string name { get; set; }
+        public string alterEgo { get; set; }
+        public string primaryAbility { get; set; }
+        public string secondaryAbility { get; set; }
+        public string catchPrase { get; set; }
+        public string weakness { get; set; }
+        public bool favorite { get; set; }
+        public string IMGurl { get; set; }
     }
 }
